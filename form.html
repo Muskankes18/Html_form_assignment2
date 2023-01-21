@@ -1,0 +1,131 @@
+<!Doctype html>
+<html>
+    <head>
+    <title>Registration form</title>
+    </head>
+    <style>
+        table{
+            border: 1px solid black;
+           
+        }
+       
+        
+    </style>
+    <body>
+        
+        <h1 style="padding-left:200px">Student Registration Form</h1>
+        <form action="/action_page.php" target="_self">
+
+        <label for="name:">Name:</label>
+        <input type="text" placeholder= "Enter your name" id="name"  required >
+        <br>
+        <br>
+        <label for="pno">Phone number:</label>
+        <input type="number" id="pno" placeholder= "Enter your phone number" name="phno" width="10" required >
+        <br>
+        <br>
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" placeholder="Enter your date of birth" required>
+        <br>
+        <br>
+        <label for="add">Address:</label>
+        <br>
+        <textarea rows="9" cols="50" name="add" id="add" >  
+           </textarea>  
+        <br>
+        <br>
+        <label for="gender">Gender:</label>
+       
+        <input type="radio" id="male" name="gender" value="Male">
+        
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <select name="city" id="city" >
+            <option value="Gurugram">Gurugram</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Panchkula">Panchkula</option>
+        </select>
+        <br><br>
+        <label for="hobby">Hobbies:</label><br>
+        <input type="checkbox" id="h1" name="h1">
+        <label for="h1">Music</label><br>
+        <input type="checkbox" id="h2" name="h2">
+        <label for="h2">Dance</label><br>
+        <input type="checkbox" id="h3" name="h3">
+        <label for="h3">Reading books<c/label><br>
+        <input type="checkbox" id="h4" name="h4">
+        <label for="h4">Making memes</label><br>
+        <input type="checkbox" id="h5" name="h5">
+        <label for="h5">Sports</label><br><br>
+       
+        <input type="submit">
+        <input type="reset">
+
+        </form>
+        <table>
+            <tr>
+                <th>S.no</th>
+                <th >Name</th>
+                <th>Phone no.</th>
+                <th>Gender</th>
+                <th>DOB</th>
+                <th >Interests</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">Muskan</td>
+                <td rowspan="3">12345</t>
+                <td rowspan="3">Female</td>
+                <td rowspan="3">8/02/2000</td>
+                <td >Making memes</td>
+                
+            </tr>
+
+            <tr>
+                <td>Dance</td>
+                
+            </tr>
+            <tr>
+                <td>Music</td>
+                
+            </tr>
+        
+        
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Mohit</td>
+                <td rowspan="3">12345</td>
+                <td rowspan="3">Male</td>
+                <td rowspan="3">25-11-2000</td>
+                <td>Sports</td>
+            </tr>
+       
+       
+        <tr>
+            <td>Reading books</td>
+            </tr>
+            <tr>
+                <td>Dance</td>
+                </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td rowspan="2">Dev</td>
+                <td rowspan="2">12345</td>
+                <td rowspan="2">Male</td>
+                <td rowspan="2">07-9-2012</td>
+                <td>Music</td>
+            </tr>
+            <tr>
+                <td>Reading books</td>
+                </tr>
+             
+       
+
+        </table>
+
+    </body>
+</html>
